@@ -1,0 +1,50 @@
+.select-duration {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    color: #FFFFFF;
+    margin-bottom: 0px;
+}
+
+.contents-box-btn sup {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: center;
+
+    color: #FFFFFF;
+}
+
+.bottom-text {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+
+@media all and (max-width:768px) {
+    .select-duration {
+        margin-top: 20px;
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    .contents-box-btn sup {
+        font-size: 12px;
+        line-height: 15px;
+    }
+
+    .bottom-text{
+        font-size: 12px;
+line-height: 15px;
+    }
+}

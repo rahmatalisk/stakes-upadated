@@ -1,13 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&display=swap');
+
+
+:root {
+  --bg-color: radial-gradient(101.95% 101.95% at 50% 23.78%, #000000 0%, #352626 100%);
+}
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: 'Inter', sans-serif;
+
+}
+
+
+
+
 body {
   margin: 0;
+  padding: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: var(--bg-color);
+  width: 100%;
+  height: 100vh;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.modal-fullscreen .modal-body {
+  background: var(--bg-color) !important;
+}
+
+.custom-bg {
+  background: var(--bg-color) !important;
+}
+
+.box-flex-center {
+  width: 100%;
+  height: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+.custom-btn {
+  outline: none;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  color: #FFFFFF;
+  width: 275px;
+  height: 60px;
+  background: radial-gradient(98.07% 98.07% at 50% 1.93%, rgba(56, 198, 244, 0.2) 0%, rgba(0, 0, 0, 0) 100%), rgba(56, 198, 244, 0.08);
+}
+
+.custom-button {
+  outline: none;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: #FFFFFF;
+  width: 391px;
+  height: 86px;
+  background: radial-gradient(98.07% 98.07% at 50% 1.93%, rgba(56, 198, 244, 0.2) 0%, rgba(0, 0, 0, 0) 100%), rgba(56, 198, 244, 0.08);
+}
+
+.custom-button img {
+  margin-right: 20px;
+}
+
+
+.custom-flex-col {
+  flex-direction: column;
+}
+
+.container-box {
+  width: 100%;
+  height: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contents-box {
+  width: 650px;
+  height: 546px;
+  background: radial-gradient(98.07% 98.07% at 50% 1.93%, rgba(56, 198, 244, 0.2) 0%, rgba(0, 0, 0, 0) 100%), rgba(56, 198, 244, 0.08);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px;
+
+}
+
+.contents-center-box {
+  width: 610px;
+  height: 506px;
+  border: 1px solid #FFFFFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 12px;
+}
+
+.contents-box-btn {
+  width: 391px;
+  height: 86px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+
+  color: #FFFFFF;
+}
+
+.custom-border-radius {
+  border-radius: 10px;
+}
+
+
+
+.custom-box-bg {
+  background: radial-gradient(98.07% 98.07% at 50% 1.93%, rgba(56, 198, 244, 0.2) 0%, rgba(0, 0, 0, 0) 100%), rgba(56, 198, 244, 0.08);
+  border-radius: 12px;
+}
+
+
+.custom-border {
+  background: rgba(56, 198, 244, 0.05);
+  border: 1px solid #F2F2F2;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+
+@media all and (max-width:768px) {
+  .contents-box {
+    width: 315px;
+    height: 362px;
+  }
+
+  .contents-box-btn {
+    width: 252px;
+    height: 69px;
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+  .contents-box-btn img {
+    width: 35px;
+  }
+
+  .contents-center-box {
+    width: 295px;
+    height: 342px;
+  }
 }

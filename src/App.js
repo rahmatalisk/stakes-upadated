@@ -1,23 +1,21 @@
-import logo from './logo.svg';
+
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Home from './Components/Home/Home';
+import Wallet from './Components/Wallet/Wallet';
+import { useState } from 'react';
+import Duration from './Components/Duration/Duration';
+
 
 function App() {
+  const [showWallet, setShowWallet] = useState(false);
+  const [showDuration, setShowDuration] = useState(false);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+       <Home setShowWAllet={setShowWallet} showWAllet={showWallet}/>
+       <Wallet setShowWAllet={setShowWallet} showWAllet={showWallet} setShowDuration={setShowDuration} showDuration={showDuration}/>
+       <Duration setShowDuration={setShowDuration} showDuration={showDuration}/>
+
     </div>
   );
 }
