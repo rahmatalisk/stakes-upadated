@@ -1,0 +1,39 @@
+.btn-top-bottom-text {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    opacity: 0.9;
+
+    color: #FFFAFA;
+}
+
+.amount-text {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+
+    color: #A09A9A;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cost-center-box {
+    position: relative;
+}
+
+.center-number-text {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    position: absolute;
+    color: #FFFFFF;
+    right: 11px;
+    top: 11px;
+}

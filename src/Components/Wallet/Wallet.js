@@ -5,7 +5,7 @@ import logo1 from "../../Images/metamask-recreated.png"
 import logo2 from "../../Images/WalletConnect-Logo 1.png"
 import logo3 from "../../Images/18060234 1.png"
 
-const Wallet = ({ setShowWAllet, showWAllet,setShowDuration, showDuration  }) => {
+const Wallet = ({ setShowWAllet, showWAllet,setShowDuration, showDuration , setShowBalance, showBalance  }) => {
 
   return (
     <>
@@ -20,15 +20,15 @@ const Wallet = ({ setShowWAllet, showWAllet,setShowDuration, showDuration  }) =>
               <div  className="contents-center-box">
                 <button className="custom-border contents-box-btn  my-3 "  onClick={() => setShowDuration(true)}>
                 <img className='me-2 me-md-5' src={logo1} alt="" />
-                  Staking Stats
+                M etamask Wallet
                 </button>
-                <button className="custom-border contents-box-btn  my-3">
+                <button className="custom-border contents-box-btn  my-3" onClick={()=>setShowBalance(true)}>
                   <img className='me-2 me-md-5' src={logo2} alt="" />
-                  Staking Stats
+                  Coinbase Wallet
                 </button>
                 <button className="custom-border contents-box-btn  my-3">
                 <img className='me-2 me-md-5' src={logo3} alt="" />
-                  Staking Stats
+                Wallet Connect
                 </button>
               </div>
 

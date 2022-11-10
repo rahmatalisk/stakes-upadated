@@ -9,7 +9,7 @@ const HomeContents = ({setShowWAllet,showWAllet}) => {
       }
     return (
         <div>
-            <div className='logo'>
+            <div className='logo mb-0'>
             <img src={logo} alt="" />
             </div>
             <div className='home-text'>
